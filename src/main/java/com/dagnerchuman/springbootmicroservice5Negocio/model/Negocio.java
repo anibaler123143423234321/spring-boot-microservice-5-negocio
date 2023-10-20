@@ -39,3 +39,6 @@ public class Negocio {
     private String telefono;
 
 }
+
+
+

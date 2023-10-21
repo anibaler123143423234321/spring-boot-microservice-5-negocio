@@ -23,7 +23,7 @@ public class Negocio {
     @Column(name="fecha_creacion", nullable = false)
     private LocalDateTime fechaCreacion;
 
-    @Column(name = "ruc", nullable = false, length = 12)
+    @Column(name = "ruc", nullable = false, length = 11, unique = true)
     private String ruc;
 
     @Column(name = "tipo_ruc", length = 25 , nullable = false)
@@ -35,7 +35,7 @@ public class Negocio {
     @Column(name="fotoQr", length = 1200, nullable = true )
     private String pictureQr;
 
-    @Column(name="telefono", nullable = false)
+    @Column(name = "telefono", nullable = false, unique = true)
     private String telefono;
 
 }
